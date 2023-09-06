@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 1em;
+  color: yellow;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  background: grey;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1920px;
+  max-height: 1080px;
+  padding: 1em;
+}
+
+.slider__wrapper {
+  display: flex;
+  border: 0.4em solid black;
+}
+
+.radio__wrapper {
+  margin-top: 1em;
+}
+
+.input__wrapper {
+  margin: 1em 0;
+}
+
+input:hover {
+  cursor: pointer;
+}
