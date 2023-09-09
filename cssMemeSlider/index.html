@@ -11,34 +11,28 @@
 <body>
   <div class="container">
     <div class="wrapper">
+
       <h1>CSS Meme Slider</h1>
 
-      <div class="slider__wrapper">
-        <img src="./mem1.jpg" alt="mem1">
-        <img src="./mem2.jpg" alt="mem2">
-        <img src="./mem3.jpg" alt="mem3">
-        <img src="./mem4.jpg" alt="mem4">
+      <div class="slide__wrapper">
+        <div class="slide"><img src="./mem1.jpg" alt="mem1"></div>
+        <div class="slide"><img src="./mem2.jpg" alt="mem2"></div>
+        <div class="slide"><img src="./mem3.jpg" alt="mem3"></div>
+        <div class="slide"><img src="./mem4.jpg" alt="mem4"></div>
       </div>
 
-      <div class="input__wrapper">
-        <label for="slide1"></label>
+      <div class="radio__wrapper">
         <input type="radio" name="slide" id="slide1" checked>
-
-        <label for="slide2"></label>
         <input type="radio" name="slide" id="slide2">
-
-        <label for="slide3"></label>
         <input type="radio" name="slide" id="slide3">
-
         <input type="radio" name="slide" id="slide4">
-        <label for="slide4"></label>
       </div>
 
-      <div class="text__wrapper">
-        <div class="slidetext">You can't just copy</div>
-        <div class="slidetext">Keep calm and carry on</div>
-        <div class="slidetext">Work-life balance</div>
-        <div class="slidetext">Dude, where is JS?</div>
+      <div class="navigation">
+        <label for="slide1" class="label">You can't just copy</label>
+        <label for="slide2" class="label">Keep calm and carry on</label>
+        <label for="slide3" class="label">Work-life balance</label>
+        <label for="slide4" class="label">Dude, where is JS?</label>
       </div>
 
     </div>

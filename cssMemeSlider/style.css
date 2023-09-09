@@ -1,14 +1,12 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   margin-bottom: 1em;
   color: yellow;
-}
-
-img {
-  display: block;
 }
 
 .container {
@@ -17,22 +15,37 @@ img {
 
 .wrapper {
   margin: 0 auto;
+  padding: 1em;
   max-width: 1920px;
   max-height: 1080px;
-  padding: 1em;
+  overflow: hidden;
+  border: 0.5em solid black;
 }
 
-.slider__wrapper {
+.slide__wrapper {
   display: flex;
-  border: 0.4em solid black;
 }
 
 .radio__wrapper {
-  margin-top: 1em;
+  margin: 1em 0;
 }
 
-.input__wrapper {
-  margin: 1em 0;
+.navigation {
+  display: flex;
+}
+
+.label {
+  cursor: pointer;
+  width: 14em;
+  height: 2em;
+  opacity: 0.5;
+  background: white;
+  transition: all 0.5s ease-in-out;
+  border-radius: 0.2em;
+}
+
+input {
+  margin: 0.5em;
 }
 
 input:hover {
