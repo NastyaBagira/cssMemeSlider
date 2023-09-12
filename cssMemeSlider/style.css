@@ -81,3 +81,10 @@ label {
   border: 0.2rem solid yellow;
   border-color: rgba(255, 255, 0, 0.827) !important;
 }
+
+#slide1:checked:hover~#active label:nth-child(1),
+#slide2:checked:hover~#active label:nth-child(2),
+#slide3:checked:hover~#active label:nth-child(3),
+#slide4:checked:hover~#active label:nth-child(4) {
+  border: 0.2rem solid rgba(255, 255, 0, 0.375) !important;
+}
