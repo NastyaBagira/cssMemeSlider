@@ -13,22 +13,23 @@
     <div class="wrapper">
       <h1>CSS Meme Slider</h1>
 
-
-
       <div class="navigation">
         <input checked type="radio" name="respond" id="desktop">
-
         <div id="radio__wrapper">
           <input type="radio" name="slider" id="slide1" checked>
           <input type="radio" name="slider" id="slide2">
           <input type="radio" name="slider" id="slide3">
           <input type="radio" name="slider" id="slide4">
 
-          <div id="slide__wrapper">
-            <div class="slide"><img src="./mem1.jpg" alt="mem1"></div>
-            <div class="slide"><img src="./mem2.jpg" alt="mem2"></div>
-            <div class="slide"><img src="./mem3.jpg" alt="mem3"></div>
-            <div class="slide"><img src="./mem4.jpg" alt="mem4"></div>
+          <div id="slides__wrapper">
+            <div id="overflow">
+              <div class="slide">
+                <div><img src="./mem1.jpg" alt="mem1"></div>
+                <div><img src="./mem2.jpg" alt="mem2"></div>
+                <div><img src="./mem3.jpg" alt="mem3"></div>
+                <div><img src="./mem4.jpg" alt="mem4"></div>
+              </div>
+            </div>
           </div>
 
           <div id="label__wrapper">
@@ -46,11 +47,6 @@
           </div>
         </div>
       </div>
-
-
-
-
-
     </div>
   </div>
 </body>
