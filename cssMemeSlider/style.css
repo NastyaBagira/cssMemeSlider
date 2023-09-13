@@ -22,29 +22,37 @@ h1 {
 }
 
 .navigation {
-  display: flex;
-}
-
-#slides__wrapper {
-  display: flex;
-  white-space: nowrap;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
 }
 
 #radio__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
 
-/* Block with Labels */
+#slides__wrapper {
+  display: flex;
+  white-space: nowrap;
+  width: 100%;
+}
+
+#overflow {
+  width: 21.9rem;
+  height: 21.25rem;
+  overflow: hidden;
+}
+
 #label__wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 1rem 0;
+  margin-top: 1rem;
   overflow: hidden;
   height: 1.2rem;
 }
-
 
 #label__wrapper label {
   color: white;
@@ -61,7 +69,9 @@ h1 {
 }
 
 #active {
-  margin-bottom: 2%;
+  width: 5rem;
+  margin-bottom: 5%;
+  margin-top: -5%;
 }
 
 #active label {
@@ -99,18 +109,12 @@ h1 {
   line-height: 0;
 }
 
-#overflow {
-  width: 21.9rem;
-  height: 21.25rem;
-  overflow: hidden;
-}
-
 div img {
   height: 100%;
   max-width: 100%;
 }
 
-#desktop:checked~#radio__wrapper {
+#main:checked~#radio__wrapper {
   max-width: 1024px;
 }
 
@@ -134,4 +138,15 @@ div img {
   transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
   display: flex;
   width: 400%;
+}
+
+#label__wrapper label {
+  display: none;
+}
+
+#slide1:checked~#label__wrapper label[for="slide1"],
+#slide2:checked~#label__wrapper label[for="slide2"],
+#slide3:checked~#label__wrapper label[for="slide3"],
+#slide4:checked~#label__wrapper label[for="slide4"] {
+  display: block;
 }
