@@ -27,9 +27,7 @@ h1 {
 
 #slides__wrapper {
   display: flex;
-  /*width: 21.875rem;
-  height: 21.3rem;
-  overflow: hidden;*/
+  white-space: nowrap;
 }
 
 #radio__wrapper {
@@ -89,13 +87,14 @@ label {
 }
 
 #overflow {
-  width: 100%;
+  width: 21.9rem;
   height: 21.25rem;
   overflow: hidden;
 }
 
 div img {
-  width: 102%;
+  height: 100%;
+  max-width: 100%;
 }
 
 #desktop:checked~#radio__wrapper {
@@ -103,21 +102,23 @@ div img {
 }
 
 #slide1:checked~#slides__wrapper .slide {
-  margin-top: 0;
+  margin-left: 0;
 }
 
 #slide2:checked~#slides__wrapper .slide {
-  margin-top: -100%;
+  margin-left: -100%;
 }
 
 #slide3:checked~#slides__wrapper .slide {
-  margin-top: -200%;
+  margin-left: -200%;
 }
 
 #slide4:checked~#slides__wrapper .slide {
-  margin-top: -300%;
+  margin-left: -300%;
 }
 
 #slides__wrapper .slide {
   transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  display: flex;
+  width: 400%;
 }
