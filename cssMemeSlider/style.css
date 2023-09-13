@@ -41,14 +41,27 @@ h1 {
   flex-direction: column;
   width: 100%;
   margin: 1rem 0;
+  overflow: hidden;
+  height: 1.2rem;
 }
 
-label {
+
+#label__wrapper label {
   color: white;
+  cursor: pointer;
+  transtion: .5s ease-out;
+}
+
+#label__wrapper label:hover {
+  color: rgba(255, 255, 0, 0.827);
 }
 
 .navigation input {
   display: none;
+}
+
+#active {
+  margin-bottom: 2%;
 }
 
 #active label {
