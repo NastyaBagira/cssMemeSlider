@@ -44,6 +44,7 @@ h1 {
 div img {
   height: 100%;
   max-width: 100%;
+  max-height: 100%;
   border-radius: 3%;
 }
 
@@ -172,6 +173,10 @@ div img {
     max-width: 31.25rem;
   }
 
+  h1 {
+    font-size: 2.5rem;
+  }
+
   #radio__wrapper {
     align-items: center;
   }
@@ -189,8 +194,43 @@ div img {
   #label__wrapper {
     margin: 6% 0;
   }
+}
+
+@media screen and (max-width:25rem) {
+  #slides__wrapper {
+    width: 97%;
+  }
+
+  #overflow {
+    width: 20.5rem;
+    height: auto;
+  }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width:23rem) {
+  #slides__wrapper {
+    width: 94%;
+  }
+
+  #overflow {
+    width: 19rem;
+  }
+
+  #label__wrapper {
+    width: 91%;
+  }
+}
+
+@media screen and (max-width:21rem) {
+  #slides__wrapper {
+    width: 92%;
+  }
+
+  #overflow {
+    width: 17rem;
   }
 }
