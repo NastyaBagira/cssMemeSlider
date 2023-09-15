@@ -166,3 +166,31 @@ div img {
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 32rem) {
+  .wrapper {
+    max-width: 31.25rem;
+  }
+
+  #radio__wrapper {
+    align-items: center;
+  }
+
+  #radio__wrapper>#label__wrapper {
+    order: 7;
+  }
+
+  #radio__wrapper>#active {
+    order: 6;
+    margin-top: 5%;
+    margin-bottom: 0;
+  }
+
+  #label__wrapper {
+    margin: 6% 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
