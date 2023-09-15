@@ -8,7 +8,7 @@
 h1 {
   font-size: 3rem;
   margin: 0.2em 0;
-  color: yellow;
+  color: rgba(255, 255, 0, 0.827);
 }
 
 .wrapper {
@@ -57,11 +57,11 @@ h1 {
 #label__wrapper label {
   color: white;
   cursor: pointer;
-  transtion: .5s ease-out;
 }
 
 #label__wrapper label:hover {
   color: rgba(255, 255, 0, 0.827);
+  transition: all .4s ease-in-out;
 }
 
 .navigation input {
@@ -87,6 +87,7 @@ h1 {
 #active label:hover {
   background: rgba(255, 255, 0, 0.827);
   border-color: #565555 !important;
+  transition: all .4s ease-in-out;
 }
 
 #slide1:checked~#active label:nth-child(1),
@@ -103,6 +104,7 @@ h1 {
 #slide3:checked:hover~#active label:nth-child(3),
 #slide4:checked:hover~#active label:nth-child(4) {
   border: 0.2rem solid rgba(255, 255, 0, 0.375) !important;
+  transition: all .4s ease-in-out;
 }
 
 #radio__wrapper .slide {
@@ -136,9 +138,9 @@ div img {
 }
 
 #slides__wrapper .slide {
-  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
   display: flex;
   width: 400%;
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 #label__wrapper label {
